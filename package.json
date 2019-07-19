@@ -1,0 +1,23 @@
+{
+  "name": "unitext-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "deferred": "^0.7.11",
+    "express": "^4.17.1",
+    "express-list-endpoints": "^4.0.1",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "officegen": "^0.6.0",
+    "q": "^1.5.1"
+  }
+}
