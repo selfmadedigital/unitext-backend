@@ -11,10 +11,11 @@ module.exports = (app, db) => {
                 });
             } else {
                 let logo = req.files.logo;
-                let filePath = './uploads/' + logo.name;
+                let logoName = logo.name.includes(' ') ? logo.name.replace(' ', '_') : logo.name;
+                let filePath = './uploads/' + logoName;
 
                 if (fs.existsSync(filePath)) {
-                    filePath = './uploads/new_' + logo.name;
+                    filePath = './uploads/' + Date.now() + '_' + logoName;
                 }
 
                 logo.mv(filePath);

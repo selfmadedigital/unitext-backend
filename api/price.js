@@ -14,6 +14,6 @@ module.exports = (app, db) => {
                 where: {
                     id: req.body.id
                 }
-            }).then((result) => res.json(result))
+            }).then((result) => res.json(result && result.length === 1 ? result[0] : 0))
     );
 }

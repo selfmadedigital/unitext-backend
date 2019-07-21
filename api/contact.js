@@ -4,7 +4,6 @@ module.exports = (app, db) => {
     );
 
     app.put("/contact", (req, res) => {
-        console.log(req.body.id);
         db.contact.update({
                 value: req.body.value,
             },
@@ -12,6 +11,8 @@ module.exports = (app, db) => {
                 where: {
                     id: req.body.id
                 }
-            }).then((result) => res.json(result))
+            }).then((result) =>
+            res.json(result && result.length === 1 ? result[0] : 0)
+        )
     })
 }
