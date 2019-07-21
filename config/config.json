@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "unitext",
+    "password": "3jNfgDSf8@",
+    "database": "unitext",
+    "host": "192.168.100.22",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "unitext",
+    "password": "3jNfgDSf8@",
+    "database": "unitext",
+    "host": "192.168.100.22",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}

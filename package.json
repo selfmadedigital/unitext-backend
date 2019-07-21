@@ -2,22 +2,44 @@
   "name": "unitext-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "./node_modules/nodemon/bin/nodemon.js server.js",
+    "sequelize-skeleton": "./node_modules/sequelize-cli/lib/sequelize init:models; ./node_modules/sequelize-cli/lib/sequelize init:config"
   },
-  "author": "",
+  "author": "Dominik Baluch",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "deferred": "^0.7.11",
+    "express-fileupload": "^1.1.5",
+    "express-ipfilter": "^1.0.1",
+    "express-list-endpoints": "^4.0.1",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
+    "officegen": "^0.6.0",
+    "orm": "^5.0.4",
+    "sequelize": "^5.10.1",
+    "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {
     "body-parser": "^1.19.0",
     "deferred": "^0.7.11",
     "express": "^4.17.1",
     "express-list-endpoints": "^4.0.1",
     "fs": "0.0.1-security",
+    "lodash": "^4.17.15",
     "multer": "^1.4.2",
     "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
     "officegen": "^0.6.0",
-    "q": "^1.5.1"
+    "orm": "^5.0.4",
+    "sequelize": "^5.10.1",
+    "sequelize-cli": "^5.5.0"
   }
 }
