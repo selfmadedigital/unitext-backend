@@ -30,11 +30,10 @@ module.exports = (app, db) => {
     app.post("/review", (req, res) =>
         db.review.create({
             user: req.body.user,
-            user_picture: req.body.user_picture,
             rating: req.body.rating,
             text: req.body.text,
             date: req.body.date,
-            allowed: req.body.allowed
         }).then((result) => res.json(result))
-    );
+    )
+    ;
 }

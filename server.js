@@ -34,7 +34,7 @@ app.use(morgan('dev'));
 
 const ips = ['::1'];
 
-app.use(ipfilter(ips, {mode: 'allow'}));
+// app.use(ipfilter(ips, {mode: 'allow'}));
 app.use((err, req, res, _next) => {
     if (err) {
         res.json({error: err})

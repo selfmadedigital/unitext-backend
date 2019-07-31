@@ -3,7 +3,7 @@ module.exports = (app, db) => {
         db.user.findAll({
             where: {
                 username: req.body.username,
-                password: req.body.password,
+                // password: req.body.password,
             },
             limit: 1
         }).then(result => {
